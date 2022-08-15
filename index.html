@@ -4,6 +4,8 @@ title: 'G@7125'
 is_home: true
 ---
 
+<p class="f7">{{ site.description }} Last updated {{ "now" | date: "%d %b %Y at %H:%M" }}.</p>
+
 {% assign counter = 0 %}
 {% for article in site.data.articles.response.results %}
 
@@ -14,7 +16,7 @@ is_home: true
 
 	<div class="w-half pr2">
 
-		<img aria-hidden="true" class="db ma0 pa0" height="300" width="500" src="{{ article.fields.thumbnail }}"{% if counter > 5 %} loading="lazy"{% endif %}>
+		<img aria-hidden="true" class="db ma0 pa0" height="300" width="500" src="{{ article.fields.thumbnail }}"{% if counter > 6 %} loading="lazy"{% endif %}>
 
 	</div>
 

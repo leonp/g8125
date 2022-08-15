@@ -11,6 +11,10 @@
         <title>{{ page.webTitle }} &#8211; {{ site.title }}</title>
         {% endif %}
 
+        {% unless page.is_home %}
+        <link rel="canonical" href="{{ page.webUrl }}">
+        {% endunless %}
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
 
