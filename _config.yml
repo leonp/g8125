@@ -1,0 +1,69 @@
+title: "G@5"
+description: "A site description"
+lang: "en"
+baseurl: ""
+url: ""
+
+# Include styles inline or link to css file?
+# This has to be set to css: inline for the theme to inline styles
+# Set it to anything else, or remove it, to link to /css/style.class
+css: inline
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-get-json
+  - jekyll-datapage-generator
+
+jekyll_get_json:
+  - data: articles
+    json: 'https://content.guardianapis.com/search?page=1&show-fields=body,standfirst,thumbnail,byline,trailText&page-size=50&production-office=UK&api-key=60d71cc7-2b08-4cce-979a-933d6a9cb1fa'
+
+page_gen-dirs: true
+
+page_gen:
+- data: 'articles.response.results'
+  template: 'garticle'
+  dir: 'a'
+  name: 'id'
+
+# Defaults
+# Enable is_homepost test for posts
+# Enable is_page test for pages
+# Enable is_home test for home page
+# Use {% if page.is_post %} etc.
+defaults:
+-
+    scope:
+        path: "/"      # empty string for all files
+    values:
+        is_home: true
+-
+    scope:
+        path: ""
+        type: posts
+    values:
+        is_post: true
+-
+    scope:
+        path: ""
+        type: pages
+    values:
+        is_page: true
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/

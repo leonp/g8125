@@ -1,0 +1,31 @@
+{% include header.html %}
+
+<article>
+
+    <div class="mb3 pb3 bb b--moon-gray">
+
+        <p class="mb2 f7 f6-ns mid-gray lh-title"><a href="/" class="b ph2 pv1 br3 bg-dark-blue white no-underline">{{ site.title }}</a> &rarr; {{ page.fields.byline}}, <time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b %H:%M" }}</time></p>
+
+        <h1 class="f3 lh-title mt0 mb3">{{ page.webTitle }}</h1>
+
+        <div class="cf">
+
+            <div class="fl w-50 pr3">
+
+                <img aria-hidden="true" class="db ma0 pa0" src="{{ page.fields.thumbnail }}">
+
+            </div>
+
+            <p class="ma0 f6 f5-ns lh-title mid-gray">{{ page.fields.trailText }}.</p>
+
+        </div>
+
+    </div>
+
+    {{ page.fields.body }}
+
+    <p class="b mt4"><a href="{{ page.webUrl }}">Permalink</a></p>
+
+</article>
+
+{% include footer.html %}

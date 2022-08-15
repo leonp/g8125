@@ -1,0 +1,26 @@
+---
+layout: default
+title: G@5
+---
+
+{% for article in site.data.articles.response.results %}
+
+{% assign url = article.id | remove: '/' %}
+
+<a class="flex items-start no-underline underline-hover dark-gray mv3 pt2 bt b--moon-gray" href="/a/{{ url }}">
+
+	<div class="w-50 pr2">
+
+		<img class="db ma0 pa0" src="{{ article.fields.thumbnail }}">
+
+	</div>
+
+	<div class="w-50 pl2">
+
+		<h2 class="f6 f5-ns lh-title ma0">{{ article.webTitle }}</h2>
+
+	</div>
+
+</a>
+
+{% endfor %}
