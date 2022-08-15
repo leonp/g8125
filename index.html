@@ -1,23 +1,26 @@
 ---
 layout: default
-title: '<i class="serif">s</i>G'
+title: 'G@7125'
+is_home: true
 ---
 
+{% assign counter = 0 %}
 {% for article in site.data.articles.response.results %}
 
 {% assign url = article.id | remove: '/' %}
+{% assign counter = counter | plus: 1 %}
 
-<a class="flex items-start no-underline underline-hover dark-gray mv3 pt2 bt b--moon-gray" href="/a/{{ url }}">
+<a class="flex items-start no-underline dark-type mv3 pt2 bt border no-flow" href="/a/{{ url }}">
 
-	<div class="w-50 pr2">
+	<div class="w-half pr2">
 
-		<img class="db ma0 pa0" src="{{ article.fields.thumbnail }}">
+		<img aria-hidden="true" class="db ma0 pa0" height="300" width="500" src="{{ article.fields.thumbnail }}"{% if counter > 5 %} loading="lazy"{% endif %}>
 
 	</div>
 
-	<div class="w-50 pl2">
+	<div class="w-half pl2">
 
-		<h2 class="f6 f5-ns lh-title ma0">{{ article.webTitle }}</h2>
+		<h2 class="f7 f6-ns lh-title ma0">{{ article.webTitle }}</h2>
 
 	</div>
 

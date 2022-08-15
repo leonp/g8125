@@ -1,4 +1,4 @@
-title: '<i class="serif">s</i>G'
+title: 'G@712&5'
 description: "A site description"
 lang: "en"
 baseurl: ""
@@ -21,7 +21,7 @@ plugins:
 
 jekyll_get_json:
   - data: articles
-    json: 'https://content.guardianapis.com/search?page=1&show-fields=body,standfirst,thumbnail,byline,trailText&page-size=50&production-office=UK&api-key=60d71cc7-2b08-4cce-979a-933d6a9cb1fa'
+    json: 'https://content.guardianapis.com/search?page=1&show-fields=body,standfirst,thumbnail,byline,trailText&page-size=50&production-office=UK&type=-liveblog&api-key=60d71cc7-2b08-4cce-979a-933d6a9cb1fa'
 
 page_gen-dirs: true
 

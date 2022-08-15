@@ -1,0 +1,63 @@
+.paper {
+	background-color: var(--paper);
+}
+.off-paper {
+	background-color: var(--off-paper);
+}
+.type {
+	color: var(--type);
+}
+.bg-type {
+	background-color: var(--type);
+}
+.light-type {
+	color: var(--light-type);
+}
+.bg-light-type {
+	background-color: var(--light-type);
+}
+.dark-type {
+	color: var(--dark-type);
+}
+.bg-dark-type {
+	background-color: var(--dark-type);
+}
+.bg-terminal {
+	background-color: var(--terminal);
+}
+.code {
+	color: var(--code);
+}
+.accent {
+	color: var(--accent);
+}
+.accent-two {
+	color: var(--accent-two);
+}
+.bg-accent {
+	background-color: var(--accent);
+}
+a.hover-type:hover {
+	color: var(--type);
+}
+a.hover-light-type:hover {
+	color: var(--light-type);
+}
+a.hover-dark-type:hover {
+	color: var(--dark-type);
+}
+a.hover-accent:hover,
+a.hover-accent:active,
+a.hover-accent:focus {
+	color: var(--accent);
+}
+.bg-gradient {
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,24,192,1) 35%, rgba(0,212,255,1) 100%);
+}
+@media screen and (prefers-color-scheme: dark) {
+	.bg-gradient {
+		background: rgb(2,0,36);
+		background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(247,255,153,1) 35%, rgba(0,212,255,1) 100%);
+	}
+}

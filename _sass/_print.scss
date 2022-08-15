@@ -1,0 +1,60 @@
+@media print{
+	:root{
+		--type: black;
+		--dark-type: black;
+		--light-type: #555;
+		--paper: white;
+		--off-paper: #EFEFEF;
+		--border: #cfcfcf;
+		--accent: #black;
+	}
+	* {
+		line-height:1.2;
+	}
+	html {
+		font-size: 12pt;
+		background-color: white !important;
+		color: black !important;
+	}
+	a {
+		text-decoration-color:black;
+	}
+	header
+	footer,
+	.no-print {
+		display: none;
+	}
+	a::after {
+		content: " (" attr(href) ")";
+	}
+	article {
+		max-width: 50ch;
+	}
+	table,
+	img,
+	svg,
+	figure {
+		page-break-inside: avoid;
+		break-inside: avoid;
+	}
+	article figure {
+		max-width:60% !important;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	article img {
+		display: block;
+		border: none;
+		max-width: 100% !important;
+		height: auto !important;
+	}
+	article figcaption {
+		padding-top: var(--spacer-3);
+		padding-left: 0;
+		padding-right: 0;
+	}
+	article p {
+		widows:3;
+		orphans:3;
+	}
+}

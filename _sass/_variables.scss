@@ -1,6 +1,67 @@
-// Add your custom variables to this file
-// I normally prepend them with a 'c-' to distinguish them from Tachyons selectors
+:root {
+	--base-space: 1.4rem;
+	--spacer-1: calc(var(--base-space) / 8);
+	--spacer-2: calc(var(--base-space) / 4);
+	--spacer-3: calc(var(--base-space) / 2);
+	--spacer-4: var(--base-space);
+	--spacer-5: calc(var(--base-space) * 1.25);
+	--spacer-6: calc(var(--base-space) * 1.5);
+	--spacer-7: calc(var(--base-space) * 2.25);
+	--spacer-8: calc(var(--base-space) * 3);
+	--spacer-9: calc(var(--base-space) * 4);
+	--spacer-10: calc(var(--base-space) * 5);
+	--spacer-11: calc(var(--base-space) * 6);
+	--body-ph: 8.5vw;
+	--body-pv: 1.25vh;
+	--expand: calc(var(--body-ph) * 2);
+	--pull: calc(var(--body-ph) - var(--expand));
 
-// Better sans-serif stack putting Segoe before Arial on Windows
-// We'll refer to this variable in _c.scss
-$c-sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+	--f1: 1.802rem;
+	--f2: 1.602rem;
+	--f3: 1.424rem;
+	--f4: 1.266rem;
+	--f5: 1.125rem;
+	--f6: 1rem;
+	--f7: 0.889rem;
+
+	--sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "segoe ui", "helvetica neue", helvetica, ubuntu, roboto, noto, sans-serif;
+	--serif: "STIX Two Text", ui-serif, georgia, serif;
+	--monospace: ui-monospace, SFMono-Regular, "IBM Plex Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+
+	--text-decoration-thickness: 2px;
+
+	--min-font-size: 118.75%;
+	--max-font-size: 150%;
+	--font-size: 1.9vw;
+	--lh-copy: 1.4;
+	--lh-title: 1.2;
+
+	--measure: 27rem;
+	--measure-narrow: calc(var(--measure) * 0.8);
+	--measure-wide: calc(var(--measure) * 1.2);
+	--wrapper: 27rem;
+
+	--accent: #3633f9;
+	--accent-two: #f4b60b;
+	--type: #333;
+	--terminal: #000;
+	--code: #cbfa05;
+	--dark-type: #000;
+	--light-type: #777;
+	--paper: #fff;
+	--off-paper: #efefef;
+	--border: #ddd;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+:root {
+	--type: #ddd;
+	--dark-type: #fff;
+	--light-type: #bbb;
+	--paper: #333;
+	--off-paper: #111;
+	--border: #666;
+	--accent: #f7ff99;
+	--accent-two: #99ffd4;
+}
+}

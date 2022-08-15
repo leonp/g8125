@@ -1,0 +1,46 @@
+.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+.clip {
+	position:fixed !important;
+	_position:absolute !important;
+	clip:rect(1px 1px 1px 1px);
+	clip:rect(1px, 1px, 1px, 1px);
+}
+.last-child-right *:last-child {
+	margin-right: 0;
+}
+.last-child-left *:last-child {
+	margin-left: 0;
+}
+.no-js .needs-js {
+	display: none;
+}
+.reveal-on-focus:focus {
+	position:relative !important;
+	_position:relative !important;
+	clip:auto;
+}
+.vid,
+.constrain {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin: var(--spacer-4) 0;
+	border: 1px solid var(--border);
+}
+.vid iframe,
+.vid object,
+.vid embed,
+.constrain iframe,
+.constrain object,
+.constrain embed {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
