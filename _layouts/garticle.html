@@ -1,10 +1,12 @@
 {% include header.html %}
 
+<a href="/" class="f7 lh-title db b dark-type pv3">{{ site.title }}</a>
+
 <article>
 
     <div class="mb3 pb3 bb border">
 
-        <p class="mb2 f7 light-type lh-title"><a href="/" class="b dark-type">{{ site.title }}</a> &rarr; {{ page.fields.byline }}, <time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b %H:%M" }}</time></p>
+        <p class="f7 light-type lh-title ma0">{{ page.fields.byline }}, <time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b %H:%M" }}</time></p>
 
         <h1>{{ page.webTitle }}</h1>
 
