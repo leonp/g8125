@@ -83,9 +83,32 @@ article a:focus {
 	color: var(--dark-type);
 }
 
+.article a:link {
+	color: var(--dark-type);
+}
+
+.article a:visited {
+	color: var(--light-type);
+}
+
+.article a.type {
+	color: var(--type);
+}
+
+.article a.dark-type {
+	color: var(--dark-type);
+}
+
+.article a:hover,
+.article a:active,
+.article a:focus {
+	color: var(--dark-type);
+}
+
 article aside {
 	background-color: var(--off-paper);
 	padding: var(--spacer-3) var(--spacer-4);
+	margin: var(--spacer-5) 0;
 }
 
 article figure {
@@ -146,8 +169,7 @@ kbd {
 }
 
 footer {
-	max-width: var(--wrapper);
-	margin: 0 auto;
+	margin: var(--spacer-6) 0;
 }
 
 h1,
