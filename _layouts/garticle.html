@@ -4,27 +4,23 @@
 
 <article>
 
-    <div class="mb3 pb3 bb border">
+    <div class="mb4">
 
         <p class="f7 light-type lh-title ma0">{{ page.fields.byline }}, <time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b %H:%M" }}</time></p>
 
         <h1>{{ page.webTitle }}</h1>
 
-        <div class="flex items-start no-underline underline-hover type no-flow">
+        <img aria-hidden="true" class="db center mh0 mv3 pa0" src="{{ page.fields.thumbnail }}">
 
-            <div class="w-half pr2">
-
-                <img aria-hidden="true" class="db ma0 pa0" src="{{ page.fields.thumbnail }}">
-
-            </div>
-
-            <p class="w-half pl2 ma0 f7 lh-title light-type">{{ page.fields.trailText }}.</p>
-
-        </div>
+        <p class="mb0 f5 lh-title b">{{ page.fields.trailText }}.</p>
 
     </div>
 
-    {{ page.fields.body }}
+    <div class="hyphens">
+
+        {{ page.fields.body }}
+
+    </div>
 
     <p class="b mt4"><a href="{{ page.webUrl }}">Permalink</a></p>
 

@@ -17,6 +17,11 @@
 .no-js .needs-js {
 	display: none;
 }
+.hyphens {
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
 .reveal-on-focus:focus {
 	position:relative !important;
 	_position:relative !important;

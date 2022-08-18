@@ -185,9 +185,19 @@ dt {
 	color: var(--dark-type);
 }
 
+a h1,
+a h2,
+a h3,
+a h4,
+a h5,
+a h6,
+a dt {
+	color: inherit;
+}
+
 h1 {
 	font-size: clamp(var(--f5), calc(1rem + 3vw), var(--f2));
-	margin-top: var(--spacer-2);
+	margin-top: var(--spacer-1);
 }
 
 h2 {
