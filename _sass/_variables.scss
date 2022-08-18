@@ -13,8 +13,9 @@
 	--spacer-11: calc(var(--base-space) * 6);
 	--body-ph: 8.5vw;
 	--body-pv: 1.25vh;
-	--expand: calc(var(--body-ph) * 2);
-	--pull: calc(var(--body-ph) - var(--expand));
+	--body-ph-x2: calc(var(--body-ph) * 2);
+	--expand: calc(100% + var(--body-ph-x2));
+	--pull: calc(var(--body-ph) - var(--body-ph-x2));
 
 	--f1: 1.802rem;
 	--f2: 1.602rem;
@@ -34,7 +35,7 @@
 	--max-font-size: 125%;
 	--font-size: 1.9vw;
 	--lh-copy: 1.4;
-	--lh-title: 1.2;
+	--lh-title: 1.15;
 
 	--measure: 25rem;
 	--measure-narrow: calc(var(--measure) * 0.8);

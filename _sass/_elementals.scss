@@ -126,9 +126,8 @@ article figcaption * {
 	margin: 0;
 }
 
-article img {
-	margin-left: auto;
-	margin-right: auto;
+article figure img {
+	margin: 0 auto;
 	display: block;
 }
 
@@ -197,7 +196,6 @@ a dt {
 
 h1 {
 	font-size: clamp(var(--f5), calc(1rem + 3vw), var(--f2));
-	margin-top: var(--spacer-1);
 }
 
 h2 {

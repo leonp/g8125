@@ -6,9 +6,9 @@
 
     <div class="mb4">
 
-        <p class="f7 light-type lh-title ma0">{{ page.fields.byline }}, <time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b %H:%M" }}</time></p>
-
         <h1>{{ page.webTitle }}</h1>
+
+        <p class="f7 light-type lh-title mb0 mv2">{{ page.fields.byline }}, <time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b %H:%M" }}</time></p>
 
         <img aria-hidden="true" class="db center mh0 mv3 pa0" src="{{ page.fields.thumbnail }}">
 
