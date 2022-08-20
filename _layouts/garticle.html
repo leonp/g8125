@@ -8,11 +8,15 @@
 
         <h1>{{ page.webTitle }}</h1>
 
-        <p class="f7 light-type lh-title mb0 mv2">{{ page.fields.byline }}, <time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b %H:%M" }}</time></p>
+        <div class="f7 light-type lh-title mb0 mt2">
+
+            <p class="ma0">{{ page.fields.byline }}, <time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b %H:%M" }}</time>, <a href="{{ page.webUrl }}">Guardian link</a></p>
+
+        </div>
 
         <img aria-hidden="true" class="db center mh0 mv3 pa0" src="{{ page.fields.thumbnail }}">
 
-        <p class="mb0 f5 lh-title b">{{ page.fields.trailText }}.</p>
+        <p class="mb0 f5 lh-title">{{ page.fields.trailText }}.</p>
 
     </div>
 
@@ -21,8 +25,6 @@
         {{ page.fields.body }}
 
     </div>
-
-    <p class="b mt4"><a href="{{ page.webUrl }}">Permalink</a></p>
 
 </article>
 
