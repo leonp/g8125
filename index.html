@@ -13,22 +13,34 @@ is_home: true
 {% assign counter = counter | plus: 1 %}
 
 <div class="article">
+
+	{% if article.fields.thumbnail %}
 	
-	<a class="flex items-start no-underline mv3 pt2 bt border no-flow" href="/a/{{ url }}">
+		<a class="flex items-start no-underline mv3 pt2 bt border no-flow" href="/a/{{ url }}">
 
-		<div class="w-half pr2">
+			<div class="w-half pr2">
 
-			<img aria-hidden="true" class="db ma0 pa0" height="300" width="500" src="{{ article.fields.thumbnail }}"{% if counter > 6 %} loading="lazy"{% endif %}>
+				<img aria-hidden="true" class="db ma0 pa0" height="300" width="500" src="{{ article.fields.thumbnail }}"{% if counter > 6 %} loading="lazy"{% endif %}>
 
-		</div>
+			</div>
 
-		<div class="w-half pl2">
+			<div class="w-half pl2">
+
+				<h2 class="f7 f6-ns lh-title ma0">{{ article.webTitle }}</h2>
+
+			</div>
+
+		</a>
+
+	{% else %}
+
+		<a class="no-underline mv3 pt2 bt border no-flow" href="/a/{{ url }}">
 
 			<h2 class="f7 f6-ns lh-title ma0">{{ article.webTitle }}</h2>
 
-		</div>
+		</a>
 
-	</a>
+	{% endif %}
 
 </div>
 
