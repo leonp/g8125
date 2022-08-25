@@ -1,5 +1,5 @@
 :root {
-	--base-space: 1.4rem;
+	--base-space: 1.375rem;
 	--spacer-1: calc(var(--base-space) / 8);
 	--spacer-2: calc(var(--base-space) / 4);
 	--spacer-3: calc(var(--base-space) / 2);
@@ -34,13 +34,13 @@
 	--min-font-size: 118.75%;
 	--max-font-size: 137.5%;
 	--font-size: 1.9vw;
-	--lh-copy: 1.4;
+	--lh-copy: 1.375;
 	--lh-title: 1.15;
 
-	--measure: 25rem;
+	--measure: 32rem;
 	--measure-narrow: calc(var(--measure) * 0.8);
 	--measure-wide: calc(var(--measure) * 1.2);
-	--wrapper: 27rem;
+	--wrapper: 34rem;
 
 	--accent: #3633f9;
 	--accent-two: #f4b60b;
@@ -52,6 +52,13 @@
 	--paper: #fff;
 	--off-paper: #efefef;
 	--border: #ddd;
+}
+
+@media screen and (min-width: 40em) {
+:root {
+	--base-space: 1.5rem;
+	--lh-copy: 1.5;
+}
 }
 
 @media screen and (prefers-color-scheme: dark) {

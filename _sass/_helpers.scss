@@ -22,6 +22,10 @@
 	-webkit-hyphens: auto;
 	hyphens: auto;
 }
+.lead *:first-child:first-line {
+	font-weight: bold;
+	color: var(--dark-type);
+}
 .reveal-on-focus:focus {
 	position:relative !important;
 	_position:relative !important;
