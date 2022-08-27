@@ -22,7 +22,7 @@
 	-webkit-hyphens: auto;
 	hyphens: auto;
 }
-.lead *:first-child:first-line {
+.lead > p:first-child:first-line {
 	font-weight: bold;
 	color: var(--dark-type);
 }
@@ -57,8 +57,6 @@
 	width:100%;
 	height:100%;
 }
-
-
 .email-sub__iframe,
 .email-sub__iframe + figcaption {
 	display: none;
