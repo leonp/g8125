@@ -15,6 +15,10 @@
         <link rel="canonical" href="{{ page.webUrl }}">
         {% endunless %}
 
+        {% if page.noindex %}
+        <meta name="robots" content="noindex,nofollow">
+        {% endif %}
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
 
