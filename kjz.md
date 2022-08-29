@@ -14,3 +14,5 @@ noindex: true
     <button type="submit">Build! &rarr;</button>
 
 </form>
+
+Or, [head back to the home page](/).

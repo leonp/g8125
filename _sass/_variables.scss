@@ -37,10 +37,10 @@
 	--lh-copy: 1.375;
 	--lh-title: 1.15;
 
-	--measure: 32rem;
+	--measure: 28rem;
 	--measure-narrow: calc(var(--measure) * 0.8);
 	--measure-wide: calc(var(--measure) * 1.2);
-	--wrapper: 34rem;
+	--wrapper: 28rem;
 
 	--accent: #3633f9;
 	--accent-two: #f4b60b;
@@ -56,8 +56,8 @@
 
 @media screen and (min-width: 40em) {
 :root {
-	--base-space: 1.5rem;
-	--lh-copy: 1.5;
+	--base-space: 1.4375rem;
+	--lh-copy: 1.4375;
 }
 }
 
