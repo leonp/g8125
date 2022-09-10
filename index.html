@@ -4,7 +4,11 @@ title: 'Skinny Guardian'
 is_home: true
 ---
 
-<p class="f7 article lh-title">The latest 50 Guardian articles updated 3 times a day. Last updated {{ "now" | date: "%d %b %Y at %H:%M" }} <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>.</p>
+<div class="f7 article lh-title">
+
+	<p class="mb0">The latest 50 Guardian articles updated 3 times a day. Last updated {{ "now" | date: "%d %b %Y at %H:%M" }} <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>. <strong>Excluding articles tagged “uk/monarchy”.</strong></p>
+
+</div>
 
 {% assign counter = 0 %}
 {% for article in site.data.articles.response.results %}
