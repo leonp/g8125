@@ -21,7 +21,7 @@ plugins:
 
 jekyll_get_json:
   - data: articles
-    json: 'https://content.guardianapis.com/search?show-fields=all&page-size=50&production-office=UK&type=-liveblog&api-key=60d71cc7-2b08-4cce-979a-933d6a9cb1fa'
+    json: 'https://content.guardianapis.com/search?show-fields=all&tag=-uk/monarchy&page-size=50&production-office=UK&type=-liveblog&api-key=60d71cc7-2b08-4cce-979a-933d6a9cb1fa'
 
 page_gen-dirs: true
 
