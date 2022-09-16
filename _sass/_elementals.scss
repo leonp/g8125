@@ -41,6 +41,12 @@ a {
 	text-decoration-color: var(--accent);
 }
 
+a[aria-current="page"] {
+	text-decoration: underline;
+	text-decoration-color: var(--accent);
+	text-decoration-thickness: 3px;
+}
+
 article {
 	overflow-wrap: break-word;
   word-wrap: break-word;

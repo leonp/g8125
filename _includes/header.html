@@ -41,4 +41,23 @@
 
         <div class="measure center">
 
+            <header class="article lh-title no-flow">
+
+                <nav class="flex items-center column-gap mb2 f3">
+
+                    <a class="no-underline pv2" aria-label="UK edition" href="/" {% if page.edition == "uk" %}aria-current="page"{% endif %}><span role="img">🇬🇧</a>
+                    <a class="no-underline pv2" aria-label="Australia edition" href="/au" {% if page.edition == "au" %}aria-current="page"{% endif %}><span role="img">🇦🇺</span></a><a class="no-underline pv2" aria-label="US edition" href="/us" {% if page.edition == "us" %}aria-current="page"{% endif %}><span role="img">🇺🇸</span></a>
+
+                </nav>
+
+                <div class="mb4">
+
+                    <h1 class="f7 mb1 mt0">Skinny Guardian{% if page.edition %} — {{ page.edition | upcase }} edition{% endif %}</h1>
+
+                    {% if page.edition %}<p class="ma0 f7">The latest 50 Guardian articles updated 3 times a day. Last updated {{ "now" | date: "%d %b %Y at %H:%M" }} <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>. <strong>Excluding articles tagged “uk/monarchy”.</strong></p>{% endif %}
+
+                </div>
+
+            </header>
+
             <main id="content">

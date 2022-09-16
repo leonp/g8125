@@ -2,11 +2,11 @@
 layout: default
 title: 'Skinny Guardian'
 is_home: true
-edition: uk
+edition: au
 ---
 
 {% assign counter = 0 %}
-{% for article in site.data.uk_articles.response.results %}
+{% for article in site.data.au_articles.response.results %}
 
 {% assign url = article.id | remove: '/' %}
 {% assign counter = counter | plus: 1 %}
@@ -15,7 +15,7 @@ edition: uk
 
 	{% if article.fields.thumbnail %}
 	
-		<a class="flex items-start no-underline mv3 pt2 bt border no-flow" href="/uk/{{ url }}">
+		<a class="flex items-start no-underline mv3 pt2 bt border no-flow" href="/au/{{ url }}">
 
 			<div class="w-half pr2">
 
@@ -44,3 +44,4 @@ edition: uk
 </div>
 
 {% endfor %}
+
