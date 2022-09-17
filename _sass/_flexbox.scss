@@ -111,3 +111,12 @@
 .gap {
 	gap: var(--spacer-5);
 }
+.column-gap-s {
+	column-gap: var(--spacer-3);
+}
+.row-gap-s {
+	row-gap: var(--spacer-3);
+}
+.gap-s {
+	gap: var(--spacer-3);
+}
