@@ -4,27 +4,27 @@
 
     <div class="no-flow">
 
-        <p class="f7 light-type lh-title mt0 mb2"><time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b, %H:%M" }}</time> {% if page.fields.productionOffice == "AUS" %}<a href="/au">🇦🇺 AU edition</a>{% elsif page.fields.productionOffice == "UK" %}<a href="/">🇬🇧 UK edition</a>{% else %}<a href="/us">🇺🇸 US edition</a>{% endif %}</p>
+        <p class="f7 light-type lh-title mt0 mb2"><time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b, %H:%M" }}</time>{% if page.fields.byline %}, {{ page.fields.byline }}{% endif %}, {% if page.fields.productionOffice == "AUS" %}<a href="/au">🇦🇺 AU edition</a>{% elsif page.fields.productionOffice == "UK" %}<a href="/">🇬🇧 UK edition</a>{% else %}<a href="/us">🇺🇸 US edition</a>{% endif %}</p>
 
         <h1>{{ page.webTitle }}</h1>
 
-        <p class="mv3 f5 lh-title">{{ page.fields.trailText }}</p>
-
     </div>
 
-    <div>
+    <div class="mb4">
 
         {{ page.fields.main }}
 
     </div>
 
-    <div class="hyphens lead article-body mv3">
+    <div class="hyphens article-body mv3">
+
+        <p class="mv3 b">{{ page.fields.trailText }}</p>
 
         {{ page.fields.body }}
 
     </div>
 
-    <p class="f7 lh-title light-type mv4 pt2 bt border">— {{ page.fields.byline }}, <a href="{{ page.webUrl }}">Guardian link</a></p>
+    <p class="f7 lh-title light-type mv4 pt2 bt border"><a href="{{ page.webUrl }}">Guardian link</a></p>
 
 </article>
 
