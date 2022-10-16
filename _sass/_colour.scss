@@ -49,7 +49,7 @@ a.hover-dark-type:hover {
 a.hover-accent:hover,
 a.hover-accent:active,
 a.hover-accent:focus {
-	color: var(--accent);
+	background-color: var(--accent);
 }
 .bg-gradient {
 	background: rgb(2,0,36);
