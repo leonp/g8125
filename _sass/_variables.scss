@@ -26,22 +26,22 @@
 	--f6: 1rem;
 	--f7: 0.889rem;
 
-	--sans-serif: "Avenir Next", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "segoe ui", "helvetica neue", helvetica, ubuntu, roboto, noto, sans-serif;
+	--sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "segoe ui", "helvetica neue", helvetica, ubuntu, roboto, noto, sans-serif;
 	--serif: "STIX Two Text", ui-serif, georgia, serif;
 	--monospace: ui-monospace, SFMono-Regular, "IBM Plex Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
 
 	--text-decoration-thickness: 2px;
 
 	--min-font-size: 118.75%;
-	--max-font-size: 137.5%;
-	--font-size: 1.6vw;
+	--max-font-size: 150%;
+	--font-size: 1.45vw;
 	--lh-copy: 1.375;
-	--lh-title: 1.15;
+	--lh-title: 1.2;
 
-	--measure: 28rem;
+	--measure: 30rem;
 	--measure-narrow: calc(var(--measure) * 0.8);
 	--measure-wide: calc(var(--measure) * 1.2);
-	--wrapper: 28rem;
+	--wrapper: 30rem;
 
 	--accent: #3633f9;
 	--accent-two: #f4b60b;
@@ -57,8 +57,8 @@
 
 @media screen and (min-width: 40em) {
 :root {
-	--base-space: 1.5rem;
-	--lh-copy: 1.5;
+	--base-space: 1.375rem;
+	--lh-copy: 1.375;
 }
 }
 
