@@ -33,7 +33,8 @@
 }
 .vid,
 .constrain,
-.element-video {
+.element-video,
+gu-atom > div {
 	position: relative;
 	padding-bottom: 56.25%;
 	padding-top: 30px;
@@ -50,7 +51,10 @@
 .constrain embed,
 .element-video iframe,
 .element-video object,
-.element-video embed {
+.element-video embed,
+gu-atom > div iframe,
+gu-atom > div object,
+gu-atom > div embed {
 	position: absolute;
 	top:0;
 	left:0;
@@ -65,4 +69,8 @@
 .email-sub__iframe,
 .email-sub__iframe + figcaption {
 	display: none;
+}
+.list {
+	list-style-type: none;
+	padding-left: 0
 }

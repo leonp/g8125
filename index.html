@@ -5,13 +5,15 @@ is_home: true
 edition: uk
 ---
 
+<ul role="list" class="list">
+
 {% assign counter = 0 %}
 {% for article in site.data.uk_articles.response.results %}
 
 {% assign url = article.id | remove: '/' %}
 {% assign counter = counter | plus: 1 %}
 
-<div class="article">
+<li class="article">
 
 	{% if article.fields.thumbnail %}
 	
@@ -41,6 +43,6 @@ edition: uk
 
 	{% endif %}
 
-</div>
+</li>
 
 {% endfor %}
