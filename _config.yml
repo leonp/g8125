@@ -23,7 +23,7 @@ jekyll_get_json:
   - data: uk_articles
     json: 'https://content.guardianapis.com/search?show-fields=all&tag=-uk/monarchy&page-size=50&production-office=UK&type=-liveblog&api-key=60d71cc7-2b08-4cce-979a-933d6a9cb1fa'
   - data: au_articles
-    json: 'https://content.guardianapis.com/search?show-fields=all&tag=-uk/monarchy&page-size=50&production-office=aus&type=-liveblog&api-key=60d71cc7-2b08-4cce-979a-933d6a9cb1fa'
+    json: 'https://content.guardianapis.com/search?show-fields=all&tag=-uk/monarchy&page-size=25&production-office=aus&type=-liveblog&api-key=60d71cc7-2b08-4cce-979a-933d6a9cb1fa'
   - data: us_articles
     json: 'https://content.guardianapis.com/search?show-fields=all&tag=-uk/monarchy&page-size=50&production-office=us&type=-liveblog&api-key=60d71cc7-2b08-4cce-979a-933d6a9cb1fa'
 
