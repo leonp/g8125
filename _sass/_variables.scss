@@ -26,7 +26,7 @@
 	--f6: 1rem;
 	--f7: 0.889rem;
 
-	--sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "segoe ui", "helvetica neue", helvetica, ubuntu, roboto, noto, sans-serif;
+	--sans-serif: Seravek, 'Gill Sans Nova', Ubuntu, 'Segoe UI', Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 	--serif: "STIX Two Text", ui-serif, georgia, serif;
 	--monospace: ui-monospace, SFMono-Regular, "IBM Plex Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
 
@@ -34,7 +34,7 @@
 
 	--min-font-size: 118.75%;
 	--max-font-size: 150%;
-	--font-size: 1.45vw;
+	--font-size: 1.6vw;
 	--lh-copy: 1.375;
 	--lh-title: 1.2;
 
@@ -57,8 +57,8 @@
 
 @media screen and (min-width: 40em) {
 :root {
-	--base-space: 1.375rem;
-	--lh-copy: 1.375;
+	--base-space: 1.4375rem;
+	--lh-copy: 1.4375;
 }
 }
 
