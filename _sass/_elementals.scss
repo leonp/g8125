@@ -178,17 +178,16 @@ footer {
 	margin: var(--spacer-6) 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-dt {
+:is(h1,h2,h3,h4,h5,h6,dt) {
 	line-height: var(--lh-title);
 	margin-top: var(--spacer-5);
 	font-family: var(--sans-serif);
 	color: var(--dark-type);
+}
+
+:is(h1,h2,h3,h4,h5,h6,dt) + :is(h1,h2,h3,h4,h5,h6,dt) {
+	margin-top: var(--spacer-3);
+	margin-block-start: var(--spacer-3);
 }
 
 h1 strong,
