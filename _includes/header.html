@@ -43,20 +43,14 @@
 
             <header class="article lh-title no-flow">
 
-                <div class="flex items-center justify-between flex-row-reverse">
+                <nav class="flex items-center mb4 f2 off-paper">
 
-                    <h1 class="f7 mb1 mt0">Skinny Guardian</h1>
+                    <a class="no-underline pa2 off-paper hover-accent" aria-label="UK edition" href="/" {% if page.edition == "uk" %}aria-current="page"{% endif %}><span role="img">🇬🇧</span></a>
+                    <a class="no-underline pa2 off-paper hover-accent" aria-label="Australia edition" href="/au" {% if page.edition == "au" %}aria-current="page"{% endif %}><span role="img">🇦🇺</span></a><a class="no-underline pa2 off-paper hover-accent" aria-label="US edition" href="/us" {% if page.edition == "us" %}aria-current="page"{% endif %}><span role="img">🇺🇸</span></a>
 
-                    <nav class="flex items-center column-gap-s mb2 f2">
-
-                        <a class="no-underline pa2 hover-accent" aria-label="UK edition" href="/" {% if page.edition == "uk" %}aria-current="page"{% endif %}><span role="img">🇬🇧</span></a>
-                        <a class="no-underline pa2 hover-accent" aria-label="Australia edition" href="/au" {% if page.edition == "au" %}aria-current="page"{% endif %}><span role="img">🇦🇺</span></a><a class="no-underline pa2 hover-accent" aria-label="US edition" href="/us" {% if page.edition == "us" %}aria-current="page"{% endif %}><span role="img">🇺🇸</span></a>
-
-                    </nav>
-
-                </div>
+                </nav>
                 
-                {% if page.edition %}<p class="mt0 mb4 f7"><strong>{{ page.edition | upcase }} edition</strong>. The latest 50 Guardian articles updated every hour. Last updated {{ "now" | date: "%d %b %Y at %H:%M" }} <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>.</p>{% endif %}
+                {% if page.is_home %}<p class="mt0 mb4 f7"><strong>Skinny Guardian{% if page.edition %} — {{ page.edition | upcase }} edition</strong>. The latest 50 Guardian articles updated every hour. Last updated {{ "now" | date: "%d %b %Y at %H:%M" }} <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>.</p>{% endif %}{% endif %}
 
             </header>
 
