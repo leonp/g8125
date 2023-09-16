@@ -211,15 +211,43 @@ a dt {
 }
 
 h1 {
-	font-size: clamp(var(--f5), calc(1rem + 3vw), var(--f2));
+	font-size: clamp(var(--f5), calc(1rem + 3vw), var(--f3));
 }
 
 h2 {
-	font-size: clamp(var(--f6), calc(1rem + 2vw), var(--f3));
+	font-size: clamp(var(--f6), calc(1rem + 2vw), var(--f4));
 }
 
 h3 {
-	font-size: clamp(var(--f7), calc(1rem + 1.5vw), var(--f4));
+	font-size: clamp(var(--f7), calc(1rem + 1.5vw), var(--f5));
+}
+
+h4 {
+	font-size: clamp(var(--f7), calc(1rem + 1.25vw), var(--f5));
+}
+
+h5 {
+	font-size: clamp(var(--f7), calc(1rem + 1.25vw), var(--f5));
+}
+
+h6 {
+	font-size: clamp(var(--f7), calc(1rem + 1.25vw), var(--f5));
+}
+
+dt {
+	font-size: clamp(var(--f5), calc(1rem + 2vw), var(--f4));
+}
+
+h1 {
+	font-size: var(--f4);
+}
+
+h2 {
+	font-size: var(--f5);
+}
+
+h3 {
+	font-size: clamp(var(--f7), calc(1rem + 1.5vw), var(--f5));
 }
 
 h4 {
