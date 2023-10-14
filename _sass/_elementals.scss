@@ -183,6 +183,7 @@ footer {
 	margin-top: var(--spacer-5);
 	font-family: var(--sans-serif);
 	color: var(--dark-type);
+	text-wrap: balance;
 }
 
 :is(h1,h2,h3,h4,h5,h6,dt) + :is(h1,h2,h3,h4,h5,h6,dt) {
