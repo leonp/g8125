@@ -8,6 +8,7 @@
 * {
    margin: 0;
    font-family: inherit;
+   box-sizing: border-box;
 }
 
 * + * {
@@ -34,6 +35,10 @@ img {
    line-height: var(--lh-title);
 }
 
+blockquote {
+   padding-left: var(--base);
+   font-size: 0.875rem;
+}
 
 @supports (max-inline-size: 38rem) {
 
@@ -57,6 +62,11 @@ img {
       height: unset !important;
       max-inline-size: 100% !important;
       block-size: auto !important;
+   }
+
+   blockquote {
+      padding-left: unset;
+      padding-inline-start: var(--base);
    }
 
    body > header {
