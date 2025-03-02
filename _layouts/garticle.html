@@ -4,7 +4,7 @@
 
         <h1>{{ page.webTitle }}</h1>
 
-        <p><time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b, %H:%M" }}</time>. {% if page.fields.productionOffice == "AUS" %}<a href="/au">🇦🇺 AU edition</a>{% elsif page.fields.productionOffice == "UK" %}<a href="/">🇬🇧 UK edition</a>{% else %}<a href="/us">🇺🇸 US edition</a>{% endif %}</p>
+        <p><time datetime="{{ page.webPublicationDate | date: "%Y-%m-%d %H:%M" }}">{{ page.webPublicationDate | date: "%d %b, %H:%M" }}</time>. {% if page.fields.productionOffice == "AUS" %}<a href="/au">AU edition</a>{% elsif page.fields.productionOffice == "UK" %}<a href="/">UK edition</a>{% else %}<a href="/us">US edition</a>{% endif %}</p>
 
     </header>
 
