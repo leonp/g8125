@@ -24,34 +24,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
 
-        {% if site.css == 'inline' %}
-        <style>
-            {% capture inline-styles %}
-            {% include style.scss %}
-            {% endcapture %}
-            {{ inline-styles | scssify }}
-        </style>
-        {% else %}
         <link href="/css/style.css" rel="stylesheet">
-        {% endif %}
 
     </head>
 
     <body>
 
-        <div class="measure center">
+        <a class="db" href="#content">Skip to content</a>
 
-            <header class="article lh-title no-flow">
+        <header>
 
-                <nav class="flex items-center mb4 f2 flex-gap">
+            <nav>
 
-                    <a class="no-underline pa2 hover-accent" aria-label="UK edition" href="/" {% if page.edition == "uk" %}aria-current="page"{% endif %}><span role="img">🇬🇧</span></a>
-                    <a class="no-underline pa2 hover-accent" aria-label="Australia edition" href="/au" {% if page.edition == "au" %}aria-current="page"{% endif %}><span role="img">🇦🇺</span></a><a class="no-underline pa2 hover-accent" aria-label="US edition" href="/us" {% if page.edition == "us" %}aria-current="page"{% endif %}><span role="img">🇺🇸</span></a>
+                <ul>
 
-                </nav>
-                
-                {% if page.is_home %}<p class="mt0 mb4 f7"><strong>Skinny Guardian{% if page.edition %} — {{ page.edition | upcase }} edition</strong>. The latest 50 Guardian articles updated every hour. Last updated {{ "now" | date: "%d %b %Y at %H:%M" }} <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>.</p>{% endif %}{% endif %}
+                    <li><a href="/" {% if page.edition == "uk" %}aria-current="page"{% endif %}>🇬🇧 UK edition</a></li>
+                    <li><a href="/au" {% if page.edition == "au" %}aria-current="page"{% endif %}>🇦🇺 Australia edition</a></li>
+                    <li><a href="/us" {% if page.edition == "us" %}aria-current="page"{% endif %}>🇺🇸 US edition</a></li>
 
-            </header>
+                </ul>
 
-            <main id="content">
+            </nav>
+
+        </header>
+
+        <main id="content">

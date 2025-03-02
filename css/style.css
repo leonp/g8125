@@ -1,0 +1,96 @@
+:root {
+    --base: 1.5rem;
+    --lh-copy: 1.5;
+    --lh-title: 1.2;
+}
+
+* {
+   margin: 0;
+   font-family: inherit;
+}
+
+* + * {
+   margin-top: 0.75rem;
+}
+
+html {
+   padding: var(--base);
+   line-height: var(--lh-copy);
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, sans-serif;
+}
+
+body {
+   max-width: 30rem;
+}
+
+img {
+   max-width: 100% !important;
+   height: auto !important;
+}
+
+:is(h1,h2,h3,h4,h5,h6) {
+   line-height: var(--lh-title);
+}
+
+
+@supports (max-inline-size: 38rem) {
+
+
+   * + * {
+      margin-top: unset;
+      margin-block-start: calc(var(--base) / 2);
+   }
+
+   body {
+      max-width: unset;
+      max-inline-size: var(--measure);
+   }
+
+   img {
+      max-width: unset !important;
+      height: unset !important;
+      max-inline-size: 100% !important;
+      block-size: auto !important;
+   }
+
+   body > header {
+      margin-block-end: calc(var(--base) * 2);
+   }
+
+   body > footer {
+      margin-block-start: calc(var(--base) * 2);
+   }
+
+   main header {
+      margin-block-end: var(--base);
+   }
+
+   main footer {
+      margin-block-start: var(--base);
+   }
+
+
+}
+
+
+.vid,
+.constrain,
+.element-video,
+.vid iframe,
+.vid object,
+.vid embed,
+.constrain iframe,
+.constrain object,
+.constrain embed,
+.element-video iframe,
+.element-video object,
+.element-video embed,
+gu-atom > div,
+gu-atom > div iframe,
+gu-atom > div object,
+gu-atom > div embed,
+.element-atom,
+.email-sub__iframe,
+.email-sub__iframe + figcaption {
+    display: none;
+}
