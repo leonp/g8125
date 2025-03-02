@@ -2,6 +2,7 @@
     --base: 1.5rem;
     --lh-copy: 1.5;
     --lh-title: 1.2;
+    --measure: 30rem;
 }
 
 * {
@@ -39,6 +40,10 @@ img {
    * + * {
       margin-top: unset;
       margin-block-start: calc(var(--base) / 2);
+   }
+
+   li + li {
+      margin-block-start: 0;
    }
 
    body {
