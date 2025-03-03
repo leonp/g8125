@@ -85,6 +85,15 @@ blockquote {
       margin-block-start: var(--base);
    }
 
+   .list {
+      list-style-type: none;
+      padding-inline-start: 0;
+   }
+
+   .list a {
+      padding-block: calc(var(--base) / 4);
+      display: block;
+   }
 
 }
 
