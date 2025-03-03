@@ -123,6 +123,7 @@ blockquote {
 
    figcaption {
       font-size: 0.875rem;
+      margin-block-start: calc(var(--base) / 4);
    }
 
    blockquote {
