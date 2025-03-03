@@ -40,6 +40,19 @@ blockquote {
    font-size: 0.875rem;
 }
 
+*:focus-visible {
+   outline: none;
+   box-shadow: 0 0 0 0.2em #fff, 0 0 0 0.4em activeText;
+}
+
+@media (forced-colors: active) {
+
+   *:focus-visible {
+      outline: 0.2em solid activeText; 
+   }
+
+}
+
 @supports (max-inline-size: 38rem) {
 
 
@@ -55,6 +68,7 @@ blockquote {
    body {
       max-width: unset;
       max-inline-size: var(--measure);
+      margin-inline: auto;
    }
 
    img {
@@ -71,10 +85,12 @@ blockquote {
 
    body > header {
       margin-block-end: calc(var(--base) * 2);
+      font-size: 0.875rem;
    }
 
    body > footer {
       margin-block-start: calc(var(--base) * 2);
+      font-size: 0.875rem;
    }
 
    main header {
@@ -83,6 +99,19 @@ blockquote {
 
    main footer {
       margin-block-start: var(--base);
+      font-size: 0.875rem;
+   }
+
+   :is(h1,h2,h3,h4,h5,h6) {
+      margin-block-start: calc(var(--base) * 2);
+   }
+
+   h1 {
+      font-size: 1.5rem;
+   }
+
+   h2 {
+      font-size: 1.125rem;
    }
 
    .list {
