@@ -92,13 +92,14 @@ blockquote {
    }
 
    html {
-      padding-block: calc(var(--base) / 4);
+      padding-block: 0;
    }
 
    body {
       max-width: unset;
       max-inline-size: var(--measure);
       margin-inline: auto;
+      margin-block-start: 0;
    }
 
    body > header {
