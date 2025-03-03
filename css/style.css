@@ -71,18 +71,6 @@ blockquote {
       margin-inline: auto;
    }
 
-   img {
-      max-width: unset !important;
-      height: unset !important;
-      max-inline-size: 100% !important;
-      block-size: auto !important;
-   }
-
-   blockquote {
-      padding-left: unset;
-      padding-inline-start: var(--base);
-   }
-
    body > header {
       margin-block-end: calc(var(--base) * 2);
       font-size: 0.875rem;
@@ -102,8 +90,21 @@ blockquote {
       font-size: 0.875rem;
    }
 
+   img {
+      max-width: unset !important;
+      height: unset !important;
+      max-inline-size: 100% !important;
+      block-size: auto !important;
+   }
+
+   main img {
+      display: block;
+      margin-inline: auto;
+   }
+
    :is(h1,h2,h3,h4,h5,h6) {
       margin-block-start: calc(var(--base) * 2);
+      text-wrap: balance;
    }
 
    h1 {
@@ -112,6 +113,21 @@ blockquote {
 
    h2 {
       font-size: 1.125rem;
+   }
+
+   figcaption {
+      font-size: 0.875rem;
+   }
+
+   blockquote {
+      padding-left: unset;
+      padding-inline-start: var(--base);
+   }
+
+   figure,
+   blockquote,
+   main img {
+      margin-block: var(--base);
    }
 
    .list {
