@@ -35,6 +35,7 @@ img {
 
 :is(h1,h2,h3,h4,h5,h6) {
    line-height: var(--lh-title);
+   text-wrap: balance;
 }
 
 blockquote {
@@ -108,9 +109,8 @@ blockquote {
       margin-inline: auto;
    }
 
-   :is(h1,h2,h3,h4,h5,h6) {
+   :is(h2,h3,h4,h5,h6) {
       margin-block-start: calc(var(--base) * 1.5);
-      text-wrap: balance;
    }
 
    h1 {
@@ -135,6 +135,10 @@ blockquote {
    blockquote,
    main img {
       margin-block: var(--base);
+   }
+
+   figure img {
+      margin-block: 0;
    }
 
    .skip-link {
