@@ -192,6 +192,8 @@ blockquote {
 
    .skip-link {
       font-size: 0.875rem;
+      background-color: canvasText;
+      color: canvas;
    }
 
    .list {
