@@ -48,6 +48,29 @@ blockquote {
    box-shadow: 0 0 0 0.2em #fff, 0 0 0 0.4em activeText;
 }
 
+.hide {
+   position: absolute !important;
+   width: 1px !important;
+   height: 1px !important;
+   padding: 0 !important;
+   margin: -1px !important;
+   overflow: hidden !important;
+   clip: rect(0,0,0,0) !important;
+   white-space: nowrap !important;
+   border: 0 !important;
+}
+
+.hide:focus {
+   width: unset !important;
+   height: unset !important;
+   padding: unset !important;
+   margin: unset !important;
+   overflow: unset !important;
+   clip: unset !important;
+   white-space: unset !important;
+   border: unset !important;
+}
+
 @media (forced-colors: active) {
 
    *:focus-visible {
@@ -80,7 +103,28 @@ blockquote {
 
    body > header {
       margin-block-end: calc(var(--base) * 1.5);
+      margin-block-start: 0;
       font-size: 0.875rem;
+   }
+
+   body > header * + * {
+      margin-block-start: 0;
+   }
+
+   nav ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 1em;
+      padding-left: 0;
+      padding-inline-start: 0;
+   }
+
+   nav a {
+      display: inline-block;
+      padding-block: calc(var(--base) / 2);
+      text-decoration: none;
+      color: canvasText;
    }
 
    body > footer {
